@@ -1,0 +1,45 @@
+1. What is the difference between hashing, symmetric encryption and and asymmetric encryption.
+
+Hashing - Hashing converts a hash string from an another string. The resulting string is of a fixed length and widely varies with small variation in input. The hash string created by the ideal hashing is impossible to revert back to its original form.
+When to use hashing - Hashing is great option when we have to convert a string with a stored string but cannot store the string as plain text. For example storing passwords.
+
+Encryption - Encryption converts a string into another unreadable string of variable length. The key difference between hashing and encryption is they are irreversible and reversible respectively. Encrypted string can be reversed using the key used for encryption.
+
+Symmetric encryption - Same key is used to encrypt and decrypt.
+Asymmetric encryption  - The public key is is made available for anyone to use to encrypt messages, however only the intended recipient has access to the private key, and therefore the ability to decrypt messages.
+
+2. What is the difference between Optimistic locking and Pessimistic locking.
+Optimistic Locking is a strategy where you read a record, take note of a version number and check that the version hasn't changed before you write the record back. When you write the record back you filter the update on the version to make sure it's atomic and update the version in one hit.
+
+Pessimistic Locking is when you lock the record for your exclusive use until you have finished with it. It has much better integrity than optimistic locking but requires you to be careful with your application design to avoid Deadlocks. To use pessimistic locking you need either a direct connection to the database or an externally available transaction ID that can be used independently of the connection.
+
+3. Please list all methods you know that would reduce response time of a website.
+Minimize the number of HTTP request.
+Minify and combine files.
+Use async loading for js and css files.
+Defer js loading
+Reduce server response time
+Choosing the right hosting option
+Compression
+Browser Caching
+Reduce image size
+Usage of CDN
+Optimize CSS delivery
+Reduce number of plugins
+Reduce redirect
+Reduce external scripts
+Montering loading time and improving iteratively.
+
+4. List all of the protocols that you know for front-end and back-end communications?
+HTTP
+SFTP
+SMTP
+SNMP
+
+5. What job queue systems/libraries have you used before?
+AWS SQS
+
+6. Describe a GIT workflow that you would use for a large collaborative web development
+project.
+
+We can have 2 main branches Development and master. Then we can have branches called hotfix, release and feature hold changes made directly to master for fixing critical production bugs, change version number and other details prior to a release or work on a particular feature just like Feature branch, respectively.
